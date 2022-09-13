@@ -1,19 +1,19 @@
 public class Quersumme1 {
     public static void main(String[] args) {
 
-        for (int cnt = 0; cnt <= 1000; cnt++) {
+        for (int i = 0; i <= 1000; i++) {
+            String stringNumber = Integer.toString(i);
+            char[] numbers = stringNumber.toCharArray();
 
-            while (tmp1 > 0);
+            int result = 0;
+            for (int j = 0; j < numbers.length; j++) {
+                result += Character.getNumericValue(numbers[j]);
+            }
 
-            int tmp1 = cnt%10;
-            int tmp2 = cnt/10;
-            int CrossSum = tmp1 + tmp2;
-
-            if(CrossSum == 15){
-
-                System.out.println(cnt);
-
-            };
+            int rest = result % 7;
+            if (rest == 0){
+                System.out.println("Nummer: " + i + "  Quersumme: " + result);
+            }
 
         };
 
