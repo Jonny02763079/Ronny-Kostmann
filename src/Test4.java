@@ -15,13 +15,13 @@ public class Test4 {
 
 
             if (value > value2) {
-                for (int i = value; i > value2; i--) {
+                for (int i = value; i >= value2; i--) {
                     System.out.println(i);
                 }
             } else if (value >= value2) {
                 System.out.println(value);
             } else {
-                for (int i = value2; i > value; i--) {
+                for (int i = value2; i >= value; i--) {
                     System.out.println(i);
                 }
                 ;
