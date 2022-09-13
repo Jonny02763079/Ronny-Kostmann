@@ -10,8 +10,8 @@ public class Quersumme1 {
                 result += Character.getNumericValue(numbers[j]);
             }
 
-            int rest = result % 7;
-            if (rest == 0){
+            int rest = result;
+            if (rest == 15){
                 System.out.println("Nummer: " + i + "  Quersumme: " + result);
             }
 
