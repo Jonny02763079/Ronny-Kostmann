@@ -4,7 +4,7 @@ public class Quersumme3 {
     public static int[] CrossSums = new int[CrossSumCalculation(false) + 1];
 
     public static void main(String[] args) {
-        //Welche der Quersummen bei den Zahlen von 0 - 1000 kommt am häufigsten vor? Gib diese aus.
+
 
         CrossSumCalculation(true);
         int biggesCrossSum = 0;
@@ -18,7 +18,7 @@ public class Quersumme3 {
                 biggesCrossSum = i;
                 biggestEmergence = CrossSums[i];
             }
-            //System.out.println(i + ": " + CrossSums[i]);
+
         }
 
         System.out.println();
