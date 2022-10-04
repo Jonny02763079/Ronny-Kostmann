@@ -1,32 +1,158 @@
 import java.util.Scanner;
 
 public class Kalender {
+
+    static Scanner scanner = new Scanner(System.in);
+    static String monthname;
+    static String ID0 = "start";
+    static String ID1 = "finish";
+    static int monthstartday;
+    static boolean start = true;
+
     public static void main(String[] args) {
-        System.out.println("select your month");
-        Scanner month = new Scanner(System.in);
-        String monthname = month.next();
-        System.out.println("select your month start day");
-        Scanner monthstart = new Scanner(System.in);
-        int montnstartday = monthstart.nextInt();
 
-        switch (monthname) {
-            case "Januar", "März", "Mai", "Juli", "August", "Oktober", "Dezember":
-                System.out.println(monthname + " hat 31 Tage");
-                for (int i = 0; i < 31; i++) {
 
-                }
 
-                break;
 
-            case "Februar", "April", "Juni", "September", "November":
-                System.out.println(monthname + " hat 30 Tage");
-                break;
-
-            default:
-                System.out.println("Bitte geben sie ihren Gewünschten Monat ein");
-                break;
+        if (start == true) {
+            getstartet();
         }
-        ;
 
     }
+
+    public static void getstartet() {
+
+        while (start == true) {
+
+            System.out.println("select your month");
+            monthname = scanner.next();
+            System.out.println("select your month start day");
+            monthstartday = scanner.nextInt();
+
+            switch (monthname) {
+                case "Januar", "März", "Mai", "Juli", "August", "Oktober", "Dezember":
+                    System.out.println(monthname + " hat 31 Tage");
+
+                    switch (monthstartday) {
+                        case 1:
+                            for (int j = 1; j < 32; j++) {
+                                System.out.print("| " + j + " |");
+
+                            }
+                            break;
+                        case 2:
+                            for (int j = 2; j < 32; j++) {
+                                System.out.print("| " + j + " |");
+                            }
+                            break;
+                        case 3:
+                            for (int j = 3; j < 32; j++) {
+                                System.out.print("| " + j + " |");
+                            }
+                            break;
+                        case 4:
+                            for (int j = 4; j < 32; j++) {
+                                System.out.print("| " + j + " |");
+                            }
+                            break;
+                        case 5:
+                            for (int j = 5; j < 32; j++) {
+                                System.out.print("| " + j + " |");
+                            }
+                            break;
+                        case 6:
+                            for (int j = 6; j < 32; j++) {
+                                System.out.print("| " + j + " |");
+                            }
+                            break;
+                        case 7:
+                            for (int j = 7; j < 32; j++) {
+                                System.out.print("| " + j + " |");
+                            }
+                            break;
+
+                        default:
+                            System.out.print("Bitte geben sie ihren Gewünschten Starttag zwischen 1 und 7 ein");
+                            getstartet();
+
+
+                    }
+
+
+                    break;
+
+                case "Februar", "April", "Juni", "September", "November":
+                    System.out.println(monthname + " hat 30 Tage");
+                    switch (monthstartday) {
+                        case 1:
+                            for (int j = 1; j < 31; j++) {
+                                System.out.print("| " + j + " |");
+
+                            }
+                            break;
+                        case 2:
+                            for (int j = 2; j < 31; j++) {
+                                System.out.print("| " + j + " |");
+                            }
+                            break;
+                        case 3:
+                            for (int j = 3; j < 31; j++) {
+                                System.out.print("| " + j + " |");
+                            }
+                            break;
+                        case 4:
+                            for (int j = 4; j < 31; j++) {
+                                System.out.print("| " + j + " |");
+                            }
+                            break;
+                        case 5:
+                            for (int j = 5; j < 31; j++) {
+                                System.out.print("| " + j + " |");
+                            }
+                            break;
+                        case 6:
+                            for (int j = 6; j < 31; j++) {
+                                System.out.print("| " + j + " |");
+                            }
+                            break;
+                        case 7:
+                            for (int j = 7; j < 31; j++) {
+                                System.out.print("| " + j + " |");
+                            }
+                            break;
+
+                        default:
+                            System.out.println("Bitte geben sie ihren Gewünschten Starttag zwischen 1 und 7 ein");
+                            getstartet();
+                    }
+                    break;
+
+
+                default:
+                    System.out.println("Bitte geben sie ihren Gewünschten Monat richtig ein");
+                    getstartet();
+            }
+            ;
+            System.out.println("geben sie " + " weiter " + " ein um den nächsten Monat auszuwählen");
+            String weiterbefehl = scanner.next();
+            if (weiterbefehl.equals(ID0)) {
+                getstartet();
+            } else if (weiterbefehl.equals(ID1)){
+                System.out.println("Das Programm ist beendet");
+                start = false;
+                return;
+            } else {
+                System.out.println("ungültige Eingabe");
+                start = false;
+                return;
+            };
+
+
+        }
+
+
+    }
+
+    ;
 }
+
