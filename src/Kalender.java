@@ -12,8 +12,6 @@ public class Kalender {
     public static void main(String[] args) {
 
 
-
-
         if (start == true) {
             getstartet();
         }
@@ -35,8 +33,12 @@ public class Kalender {
 
                     switch (monthstartday) {
                         case 1:
+                            System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 1; j < 32; j++) {
-                                System.out.print("| " + j + " |");
+                                if (j <= 7) {
+                                    System.out.print("|" + j + " |");
+                                }
+                                ;
 
                             }
                             break;
@@ -133,19 +135,20 @@ public class Kalender {
                     getstartet();
             }
             ;
-            System.out.println("geben sie " + " weiter " + " ein um den nächsten Monat auszuwählen");
+            System.out.println("geben sie start ein um den nächsten Monat auszuwählen oder geben sie finish ein um das Programm zu beenden\n");
             String weiterbefehl = scanner.next();
             if (weiterbefehl.equals(ID0)) {
                 getstartet();
-            } else if (weiterbefehl.equals(ID1)){
-                System.out.println("Das Programm ist beendet");
+            } else if (weiterbefehl.equals(ID1)) {
+                System.out.println("Das Programm ist beendet\n");
                 start = false;
                 return;
             } else {
-                System.out.println("ungültige Eingabe");
+                System.out.println("ungültige Eingabe\n");
                 start = false;
                 return;
-            };
+            }
+            ;
 
 
         }
