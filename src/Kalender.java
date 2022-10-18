@@ -35,41 +35,149 @@ public class Kalender {
                         case 1:
                             System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 1; j < 32; j++) {
-                                if (j <= 7) {
-                                    System.out.print("|" + j + " |");
-                                }
+                                if (j % 7 == 0) {
+                                    if (j < 10){
+                                    System.out.println("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.println("|" + j + "|");
+                                    };
+                                }else {
+                                    if (j < 10){
+                                        System.out.print("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.print("|" + j + "|");
+                                    };
+                                };
                                 ;
 
                             }
                             break;
                         case 2:
+                            System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 2; j < 32; j++) {
-                                System.out.print("| " + j + " |");
+                                if (j % 7 == 0) {
+                                    if (j < 10){
+                                        System.out.println("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.println("|" + j + "|");
+                                    };
+                                }else {
+                                    if (j < 10){
+                                        System.out.print("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.print("|" + j + "|");
+                                    };
+                                };
+                                ;
                             }
                             break;
                         case 3:
+                            System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 3; j < 32; j++) {
-                                System.out.print("| " + j + " |");
+                                if (j % 7 == 0) {
+                                    if (j < 10){
+                                        System.out.println("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.println("|" + j + "|");
+                                    };
+                                }else {
+                                    if (j < 10){
+                                        System.out.print("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.print("|" + j + "|");
+                                    };
+                                };
+                                ;
                             }
                             break;
                         case 4:
+                            System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 4; j < 32; j++) {
-                                System.out.print("| " + j + " |");
+                                if (j % 7 == 0) {
+                                    if (j < 10){
+                                        System.out.println("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.println("|" + j + "|");
+                                    };
+                                }else {
+                                    if (j < 10){
+                                        System.out.print("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.print("|" + j + "|");
+                                    };
+                                };
+                                ;
                             }
                             break;
                         case 5:
+                            System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 5; j < 32; j++) {
-                                System.out.print("| " + j + " |");
+                                if (j % 7 == 0) {
+                                    if (j < 10){
+                                        System.out.println("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.println("|" + j + "|");
+                                    };
+                                }else {
+                                    if (j < 10){
+                                        System.out.print("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.print("|" + j + "|");
+                                    };
+                                };
+                                ;
                             }
                             break;
                         case 6:
+                            System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 6; j < 32; j++) {
-                                System.out.print("| " + j + " |");
+                                if (j % 7 == 0) {
+                                    if (j < 10){
+                                        System.out.println("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.println("|" + j + "|");
+                                    };
+                                }else {
+                                    if (j < 10){
+                                        System.out.print("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.print("|" + j + "|");
+                                    };
+                                };
+                                ;
                             }
                             break;
                         case 7:
+                            System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 7; j < 32; j++) {
-                                System.out.print("| " + j + " |");
+                                if (j % 7 == 0) {
+                                    if (j < 10){
+                                        System.out.println("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.println("|" + j + "|");
+                                    };
+                                }else {
+                                    if (j < 10){
+                                        System.out.print("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.print("|" + j + "|");
+                                    };
+                                };
+                                ;
                             }
                             break;
 
@@ -87,39 +195,151 @@ public class Kalender {
                     System.out.println(monthname + " hat 30 Tage");
                     switch (monthstartday) {
                         case 1:
+                            System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 1; j < 31; j++) {
-                                System.out.print("| " + j + " |");
+                                if (j % 7 == 0) {
+                                    if (j < 10){
+                                        System.out.println("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.println("|" + j + "|");
+                                    };
+                                }else {
+                                    if (j < 10){
+                                        System.out.print("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.print("|" + j + "|");
+                                    };
+                                };
+                                ;
 
                             }
                             break;
                         case 2:
+                            System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 2; j < 31; j++) {
-                                System.out.print("| " + j + " |");
+                                if (j % 7 == 0) {
+                                    if (j < 10){
+                                        System.out.println("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.println("|" + j + "|");
+                                    };
+                                }else {
+                                    if (j < 10){
+                                        System.out.print("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.print("|" + j + "|");
+                                    };
+                                };
+                                ;
                             }
                             break;
                         case 3:
+                            System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 3; j < 31; j++) {
-                                System.out.print("| " + j + " |");
+                                if (j % 7 == 0) {
+                                    if (j < 10){
+                                        System.out.println("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.println("|" + j + "|");
+                                    };
+                                }else {
+                                    if (j < 10){
+                                        System.out.print("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.print("|" + j + "|");
+                                    };
+                                };
+                                ;
                             }
                             break;
                         case 4:
+                            System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 4; j < 31; j++) {
-                                System.out.print("| " + j + " |");
+                                if (j % 7 == 0) {
+                                    if (j < 10){
+                                        System.out.println("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.println("|" + j + "|");
+                                    };
+                                }else {
+                                    if (j < 10){
+                                        System.out.print("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.print("|" + j + "|");
+                                    };
+                                };
+                                ;
                             }
                             break;
                         case 5:
+                            System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 5; j < 31; j++) {
-                                System.out.print("| " + j + " |");
+                                if (j % 7 == 0) {
+                                    if (j < 10){
+                                        System.out.println("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.println("|" + j + "|");
+                                    };
+                                }else {
+                                    if (j < 10){
+                                        System.out.print("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.print("|" + j + "|");
+                                    };
+                                };
+                                ;
                             }
                             break;
                         case 6:
+                            System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 6; j < 31; j++) {
-                                System.out.print("| " + j + " |");
+                                if (j % 7 == 0) {
+                                    if (j < 10){
+                                        System.out.println("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.println("|" + j + "|");
+                                    };
+                                }else {
+                                    if (j < 10){
+                                        System.out.print("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.print("|" + j + "|");
+                                    };
+                                };
+                                ;
                             }
                             break;
                         case 7:
+                            System.out.println("|MO|" + "|DI|" + "|MI|" + "|DO|" + "|FR|" + "|SA|" + "|SO|");
                             for (int j = 7; j < 31; j++) {
-                                System.out.print("| " + j + " |");
+                                if (j % 7 == 0) {
+                                    if (j < 10){
+                                        System.out.println("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.println("|" + j + "|");
+                                    };
+                                }else {
+                                    if (j < 10){
+                                        System.out.print("|" + j + " |");
+                                    }
+                                    else {
+                                        System.out.print("|" + j + "|");
+                                    };
+                                };
+                                ;
                             }
                             break;
 
@@ -135,7 +355,7 @@ public class Kalender {
                     getstartet();
             }
             ;
-            System.out.println("geben sie start ein um den nächsten Monat auszuwählen oder geben sie finish ein um das Programm zu beenden\n");
+            System.out.print("\ngeben sie start ein um den nächsten Monat auszuwählen oder geben sie finish ein um das Programm zu beenden\n");
             String weiterbefehl = scanner.next();
             if (weiterbefehl.equals(ID0)) {
                 getstartet();
