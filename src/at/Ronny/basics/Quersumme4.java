@@ -1,3 +1,5 @@
+package at.Ronny.basics;
+
 import java.util.Scanner;
 import java.util.InputMismatchException;
 

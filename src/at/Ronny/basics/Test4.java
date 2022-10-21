@@ -1,3 +1,5 @@
+package at.Ronny.basics;
+
 import java.util.Random;
 
 public class Test4 {

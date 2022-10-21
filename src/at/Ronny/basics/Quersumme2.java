@@ -1,4 +1,6 @@
-public class Quersumme1 {
+package at.Ronny.basics;
+
+public class Quersumme2 {
     public static void main(String[] args) {
 
         for (int i = 0; i <= 1000; i++) {
@@ -10,12 +12,13 @@ public class Quersumme1 {
                 result += Character.getNumericValue(numbers[j]);
             }
 
-            int rest = result;
-            if (rest == 15){
+            int rest = result % 7;
+            if (rest == 0) {
                 System.out.println("Nummer: " + i + "  Quersumme: " + result);
             }
 
-        };
-
+        }
     }
 }
+
+

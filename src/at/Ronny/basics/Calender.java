@@ -1,3 +1,5 @@
+package at.Ronny.basics;
+
 import java.util.Scanner;
 
 
@@ -9,12 +11,12 @@ public class Calender {
         boolean start = true;
         Scanner scanner = new Scanner(System.in);
         System.out.println("select your month");
-        int monthname = scanner.nextInt();
+        int monthName = scanner.nextInt();
         System.out.println("select your month start day");
         int monthstartday = scanner.nextInt();
 
         if (start = !false) {
-            calenderstart(monthname, monthstartday);
+            calenderstart(monthName, monthstartday);
         }
         ;
     }
