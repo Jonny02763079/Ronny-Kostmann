@@ -3,20 +3,115 @@ package at.Ronny.oo.basics;
 public class Car {
     //Instanz / Gedächtnisvariablen
 
-    public int fuelConsumption;
-    public int fuelAmmount;
-    public  int fuelCount;
-    public int amountOfRepetitions;
-    public String brand;
-    public String serialNumber;
+    private Engine engine;
+    private Tank tank;
+    private double fuelConsumption;
+    private int fuelAmmount;
+    private  double fuelCount;
+    private int amountOfRepetitions;
+    private String brand;
+    private String serialNumber;
     private String color;
+    private int amountFuelIntoMotor;
+
+    public void setAmountFuelIntoMotor(int amountFuelIntoMotor) {
+        this.amountFuelIntoMotor = amountFuelIntoMotor;
+    }
+
+    public void setAmountOfRepetitions(int amountOfRepetitions) {
+        if (amountOfRepetitions>10){
+            this.amountOfRepetitions = 10;
+            System.out.println("Sie befinden sich auf einer Hochzeit, die Polizei kommt, Sie dürfen sommit nicht mehr hupen");
+        } else {
+            this.amountOfRepetitions = amountOfRepetitions;
+        };
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setFuelAmmount(int fuelAmmount) {
+        if (fuelAmmount > 100) {
+            this.fuelAmmount = 100;
+            System.out.println("Sie können nicht mehr als " + this.fuelAmmount + " Liter tanken");
+        } else {
+            this.fuelAmmount = fuelAmmount;
+        };
+    }
+
+    public void setFuelConsumption(double fuelConsumption) {
+        if (fuelConsumption > 20){
+            this.fuelConsumption = 20;
+        } else if (fuelConsumption < 5){
+            this.fuelConsumption = 5;
+        } else {
+            this.fuelConsumption = fuelConsumption;
+        };
+    }
+
+    public void setFuelCount(double fuelCount) {
+        if (fuelCount > this.fuelAmmount){
+            System.out.println("Sie können nicht mehr getankt haben als" + this.fuelAmmount);
+        }else if (fuelCount < 10){
+            System.out.println("Sie sollten bald Tanken");
+        } else {
+            this.fuelCount = fuelCount;
+        };
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public int getAmountFuelIntoMotor() {
+        return amountFuelIntoMotor;
+    }
+
+    public int getAmountOfRepetitions() {
+        return amountOfRepetitions;
+    }
+
+    public int getFuelAmmount() {
+        return fuelAmmount;
+    }
+
+    public double getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    public double getFuelCount() {
+        return fuelCount;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
 
     //Konstrukteur
-    public Car(int fuelConsumption, int fuelAmmount, int fuelCount, int amountOfRepetitions, String brand, String serialNumber, String color){
-        this.fuelConsumption = fuelConsumption;
-        this.fuelAmmount = fuelAmmount;
-        this.fuelCount = fuelCount;
-        this.amountOfRepetitions = amountOfRepetitions;
+    public Car(Engine engine, Tank tank, String brand, String serialNumber, String color){
+        this.engine = engine;
+        this.tank = tank;
         this.serialNumber = serialNumber;
         this.brand = brand;
         this.color = color;
@@ -41,9 +136,13 @@ public class Car {
     };
 
     public void getRemainingRange(){
-        float result = this.fuelCount / this.fuelConsumption;
+        double result = this.fuelCount / this.fuelConsumption;
         System.out.println("Die Restweite beträg " + result + " km");
     };
+
+    public void details(){
+        System.out.println("Das Auto hat " + this.getEngine().getHorsePower() + " PS");
+    }
 }
 
 
