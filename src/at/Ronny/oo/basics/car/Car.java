@@ -1,8 +1,12 @@
-package at.Ronny.oo.basics;
+package at.Ronny.oo.basics.car;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Car {
     //Instanz / Gedächtnisvariablen
-
+    private List<wheel> wheels;
+    private List<Rueckspiegel> mirrors;
     private Engine engine;
     private Tank tank;
     private double fuelConsumption;
@@ -13,6 +17,22 @@ public class Car {
     private String serialNumber;
     private String color;
     private int amountFuelIntoMotor;
+
+    public void addMirror (Rueckspiegel rearMirror){
+        this.mirrors.add(rearMirror);
+    }
+
+    public void addWheels (wheel driveWheel){
+        this.wheels.add(driveWheel);
+    }
+
+    public List<wheel> getWheels() {
+        return wheels;
+    }
+
+    public List<Rueckspiegel> getMirrors() {
+        return mirrors;
+    }
 
     public void setAmountFuelIntoMotor(int amountFuelIntoMotor) {
         this.amountFuelIntoMotor = amountFuelIntoMotor;
@@ -115,6 +135,8 @@ public class Car {
         this.serialNumber = serialNumber;
         this.brand = brand;
         this.color = color;
+        this.mirrors = new ArrayList<>();
+        this.wheels = new ArrayList<>();
     };
     //Methode
     public void brake(){

@@ -1,4 +1,4 @@
-package at.Ronny.oo.basics;
+package at.Ronny.oo.basics.car;
 
 public class Tank {
 
