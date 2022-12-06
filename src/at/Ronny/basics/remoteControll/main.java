@@ -8,5 +8,6 @@ public class main {
         remoteControllCase rc1 = new remoteControllCase(10, 300);
         rc1.addBattery(b1);
         rc1.addBattery(b2);
+        System.out.println("test");
     }
 }
