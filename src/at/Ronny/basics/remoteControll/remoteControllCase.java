@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class remoteControllCase {
-    private List<remoteControllBattery> batteries;
+    private List<Battery> batteries;
     private int size;
     private int weight;
 
@@ -14,11 +14,11 @@ public class remoteControllCase {
         this.batteries = new ArrayList<>();
     }
 
-    public void addBattery(remoteControllBattery battery){
+    public void addBattery(Battery battery){
         this.batteries.add(battery);
     }
 
-    public List<remoteControllBattery> getBatteries() {
+    public List<Battery> getBatteries() {
         return batteries;
     }
 }

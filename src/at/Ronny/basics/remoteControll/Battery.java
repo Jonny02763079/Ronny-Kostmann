@@ -1,12 +1,12 @@
 package remoteControll;
 
-public class remoteControllBattery {
+public class Battery {
     private int AkkuStatus;
     private int size;
     private int weight;
     private double voltage;
 
-    public remoteControllBattery(int akkuStatus, int size, int weight, double voltage) {
+    public Battery(int akkuStatus, int size, int weight, double voltage) {
         AkkuStatus = akkuStatus;
         this.size = size;
         this.weight = weight;
