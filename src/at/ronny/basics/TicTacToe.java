@@ -1,4 +1,4 @@
-package at.Ronny.basics;
+package at.ronny.basics;
 
 import java.util.*;
 

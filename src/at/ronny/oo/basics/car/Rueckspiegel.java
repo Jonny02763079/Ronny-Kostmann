@@ -1,4 +1,4 @@
-package at.Ronny.oo.basics.car;
+package at.ronny.oo.basics.car;
 
 public class Rueckspiegel {
     private int size;

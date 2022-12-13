@@ -1,4 +1,4 @@
-package at.Ronny.basics;
+package at.ronny.basics;
 
 public class Quersumme2 {
     public static void main(String[] args) {

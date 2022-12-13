@@ -1,6 +1,4 @@
-package at.Ronny.basics;
-
-import java.util.Random;
+package at.ronny.basics;
 
 public class Quersumme3 {
     public static int[] CrossSums = new int[CrossSumCalculation(false) + 1];
