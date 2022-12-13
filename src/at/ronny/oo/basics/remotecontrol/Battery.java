@@ -1,25 +1,26 @@
-package remoteControll;
+package at.ronny.oo.basics.remotecontrol;
 
 public class Battery {
-    private int AkkuStatus;
+    private double AkkuStatus;
     private int size;
     private int weight;
     private double voltage;
 
-    public Battery(int akkuStatus, int size, int weight, double voltage) {
-        AkkuStatus = akkuStatus;
+    private double NewAkkuStatus;
+
+    public Battery(double AkkuStatus, int size, int weight, double voltage) {
+        this.AkkuStatus = AkkuStatus;
         this.size = size;
         this.weight = weight;
         this.voltage = voltage;
     }
 
-
-    public int getAkkuStatus() {
+    public double getAkkuStatus() {
         return AkkuStatus;
     }
 
-    public void setAkkuStatus(int akkuStatus) {
-        AkkuStatus = akkuStatus;
+    public void setAkkuStatus(double AkkuStatus) {
+        this.AkkuStatus = AkkuStatus;
     }
 
     public int getSize() {
