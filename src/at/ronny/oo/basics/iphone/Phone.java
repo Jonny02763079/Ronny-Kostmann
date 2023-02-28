@@ -16,4 +16,27 @@ public class Phone {
     public Sim getSim() {
         return sim;
     }
+
+    public String makeCall(String number){
+        this.sim.doCall(number);
+        return number;
+    }
+
+    public void takePicure(Camera.resolution size, Camera.extension type ) {
+        if (this.sdCard.getCapacity() >= 1000) {
+            PhotoFile file = this.camera.makePhoto(size, type);
+            this.sdCard.saveFile(file);
+            this.sdCard.setActualCapacity(this.sdCard.getCapacity() - this.camera.getFileSize());
+        } else {
+            System.out.println("Es ist zu wenig Speicherplatz verfügbar");
+        };
+    }
+
+    public void printAllFiles(){
+        sdCard.gettInfo();
+    }
+
+    public void getFreeSpace(){
+        this.sdCard.getFreeSpace();
+    }
 }

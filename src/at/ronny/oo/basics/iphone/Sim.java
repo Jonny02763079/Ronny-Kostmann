@@ -21,4 +21,6 @@ public class Sim {
         System.out.println("Die nummer " + number + " wird angerufen mit der Sim mit der ID " + this.id);
         return number;
     }
+
+
 }
