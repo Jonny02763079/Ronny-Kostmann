@@ -8,4 +8,12 @@ public class Objectiv {
         this.customer = customer;
         this.focalLenght = focalLenght;
     }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public double getFocalLenght() {
+        return focalLenght;
+    }
 }
